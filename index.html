@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokémon Finder</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="icon" href="./assets/icon.png" />
+	</head>
+	<body>
+		<img src="./assets/icon.png" alt="" id="title-img" />
+		<h1>Pokémon Finder</h1>
+		<div id="output"></div>
+		<div class="wrapper">
+			<input
+				type="text"
+				placeholder="Enter a name or Pokédex number "
+				id="pokemon-name"
+			/>
+			<button id="search-button">⮞</button>
+		</div>
+		<div class="wrapper">
+			<div id="error-message" class="hidden">
+				Entry not found. Please enter another name.
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
