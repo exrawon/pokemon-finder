@@ -47,7 +47,7 @@ const runApp = () => {
 	searchButton.disabled = true;
 	setTimeout(() => {
 		searchButton.disabled = false;
-	}, 2000);
+	}, 3000);
 };
 searchButton.addEventListener('click', runApp);
 document.addEventListener('keypress', (e) => {
