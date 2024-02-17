@@ -23,8 +23,8 @@ h1 {
 }
 
 input {
-	height: 30px;
-	width: 350px;
+	height: 35px;
+	width: 300px;
 	font-size: 1rem;
 	padding-left: 5px;
 	border-radius: 4px;
@@ -40,7 +40,7 @@ button {
 	border-radius: 4px;
 	color: white;
 	cursor: pointer;
-	height: 30px;
+	height: 35px;
 	width: 80px;
 }
 button:hover {
@@ -70,12 +70,13 @@ button:active {
 	align-items: center;
 	margin-bottom: 15px;
 	position: relative;
+	padding-bottom: 30px;
 }
 
 img {
 	object-fit: cover;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 }
 
 #error-message {
