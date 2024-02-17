@@ -27,10 +27,12 @@ input {
 	width: 300px;
 	font-size: 1rem;
 	padding-left: 5px;
+	padding-top: 3px;
 	border-radius: 4px;
 	border: none;
 	font-weight: bold;
 	text-align: center;
+	transition: 200ms;
 }
 input:focus {
 	outline: 2px rgb(109, 201, 255) solid;
@@ -39,18 +41,17 @@ input:hover {
 	outline: 2px rgb(109, 201, 255) solid;
 }
 button {
-	background-color: hsl(230, 79%, 42%);
+	background-color: hsl(227, 79%, 42%);
+	border: 3px hsl(0, 0%, 60%) outset;
 	border-radius: 4px;
 	color: white;
 	cursor: pointer;
 	height: 35px;
 	width: 80px;
+	transition: 300ms ease-in-out;
 }
 button:hover {
-	background-color: hsl(230, 79%, 52%);
-}
-button:active {
-	background-color: hsl(230, 79%, 57%);
+	background-color: hsl(227, 79%, 52%);
 }
 
 .wrapper {
@@ -63,8 +64,8 @@ button:active {
 	width: 400px;
 }
 #output {
-	border: 1px black solid;
-	border-radius: 4px;
+	border: 10px hsl(0, 0%, 50%) outset;
+	border-radius: 10px;
 	height: 400px;
 	width: 400px;
 	background-color: hsl(0, 0%, 90%);
@@ -74,6 +75,7 @@ button:active {
 	margin-bottom: 15px;
 	position: relative;
 	padding-bottom: 20px;
+	transition: 300ms;
 }
 
 img {
@@ -94,20 +96,23 @@ img {
 
 #name-display {
 	/* border: 1px solid red; */
-	height: 70px;
 	width: 250px;
 	margin: auto;
 	position: absolute;
 	bottom: 0;
-	z-index: 12;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.7rem;
 	color: hsl(0, 0%, 25%);
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 }
 
 #title-img {
 	object-fit: contain;
 	height: 50px;
+	transition: 1s ease-in-out;
+}
+
+#title-img:hover {
+	rotate: 180deg;
 }
