@@ -9,14 +9,14 @@ const getPokemon = async () => {
 		errorMessage.classList.add('hidden');
 
 		if (pokemonName) {
-			output.innerHTML = `<img src="./assets/loading.gif" id="sprite" />`;
+			output.innerHTML = `<img src="./assets/loading.gif" id="sprite" oncontextmenu="return false;"/>`;
 			const response = await fetch(
 				`https://pokeapi.co/api/v2/pokemon/${pokemonName}`
 			);
 
 			if (!response.ok) {
 				console.log(response.status);
-				output.innerHTML = `<img src="./assets/404.png" id="sprite" /><span id="name-display">NOT FOUND</span>`;
+				output.innerHTML = `<img src="./assets/404.png" id="sprite" oncontextmenu="return false;"/><span id="name-display">NOT FOUND</span>`;
 				errorMessage.classList.remove('hidden');
 				document.getElementById('pokemon-name').value = '';
 				return;

@@ -41,8 +41,8 @@ input:hover {
 	outline: 2px rgb(109, 201, 255) solid;
 }
 button {
-	background-color: hsl(227, 79%, 42%);
-	border: 3px hsl(0, 0%, 60%) outset;
+	background-color: hsl(227, 80%, 42%);
+	border: 3px hsl(0, 0%, 50%) outset;
 	border-radius: 4px;
 	color: white;
 	cursor: pointer;
@@ -51,7 +51,7 @@ button {
 	transition: 300ms ease-in-out;
 }
 button:hover {
-	background-color: hsl(227, 79%, 52%);
+	background-color: hsl(227, 80%, 52%);
 }
 
 .wrapper {
